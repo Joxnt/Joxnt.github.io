@@ -1,0 +1,20 @@
+.blue {
+    color: lightblue;
+}
+
+.red{
+    color: lightcoral;
+}
+
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+body {
+    background: #35363A;
+}
+
+h1 {
+    color: green;
+}
