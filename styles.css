@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'jost';
 }
 
 body{
@@ -25,7 +26,7 @@ body{
     display: table-cell;
     vertical-align: middle;
     color: #d9b08c;
-    font-size: 190%;
+    font-size: 250%;
     font-family: 'caveat', cursive;
 }
 
@@ -47,10 +48,26 @@ body{
     list-style: none;
     display: inline-block;
     margin: 0 10px;
+    position: relative;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color: #ffcb9a;
-    font-family: 'jost';
+    font-size: 120%;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    background: #d1e8e2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
 }
