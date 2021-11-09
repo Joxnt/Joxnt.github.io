@@ -1,37 +1,56 @@
-.blue {
-    color: lightblue;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-.red{
-    color: lightcoral;
-}
-
-.courier{
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-}
-
-body {
-    background: #35363A;
-}
-
-h1 {
-    color: green;
-}
-
-.box {
-    height: 100px;
-    width: 100px;
-    padding: 20px;
-    margin: 50px;
-    border: 10px solid black;
-    background-color: red;
+body{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: #116466;
 }
 
 .banner{
     width: 100%;
-    height: 100vh;
-    background-image: url(BackgroundTest.png);
-    background-size: cover;
-    background-position: center;
+    height: 5vh;
+    background-color: #2C3539;
+    display: table;
+}
+
+.banner h1{
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding-left: 1%;
+    display: table-cell;
+    vertical-align: middle;
+    color: #d9b08c;
+    font-size: 190%;
+    font-family: 'caveat', cursive;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 1vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner h1{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffcb9a;
+    font-family: 'jost';
 }
