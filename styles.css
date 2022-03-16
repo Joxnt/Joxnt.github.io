@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'jost';
+    text-decoration: none;
 }
 body{
     width: 100%;
@@ -16,7 +17,6 @@ body{
     display: table;
 }
 .banner h1{
-    text-decoration: none;
     width: 100%;
     position: relative;
     text-align: left;
@@ -26,6 +26,7 @@ body{
     color: #d9b08c;
     font-size: 250%;
     font-family: 'caveat', cursive;
+    cursor: pointer;
 }
 .navbar{
     width: 85%;
@@ -34,11 +35,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.banner h1{
-    width: 120px;
-    cursor: pointer;
-}
+}   
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -46,7 +43,6 @@ body{
     position: relative;
 }
 .navbar ul li a{
-    text-decoration: none;
     color: #ffcb9a;
     font-size: 120%;
 }
