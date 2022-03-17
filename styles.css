@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: 'jost';
-    text-decoration: none;
 }
 body{
     width: 100%;
@@ -10,7 +9,6 @@ body{
     overflow: hidden;
     background-color: #116466;
 }
-/*banner CSS*/
 .banner{
     width: 100%;
     height: 5vh;
@@ -18,7 +16,7 @@ body{
     display: table;
 }
 .banner h1{
-    width: 100%;
+    width: 10%;
     position: relative;
     text-align: left;
     padding-left: 1%;
@@ -36,7 +34,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}   
+    
+}
+.navbar a{
+    text-decoration: none;
+}
 .navbar ul li{
     list-style: none;
     display: inline-block;
@@ -44,8 +46,12 @@ body{
     position: relative;
 }
 .navbar ul li a{
+    text-decoration: none;
     color: #ffcb9a;
     font-size: 120%;
+}
+.navbar ul li a:hover{
+    color: #d9b08c;
 }
 .navbar ul li::after{
     content: '';
@@ -59,4 +65,11 @@ body{
 }
 .navbar ul li:hover::after{
     width: 100%;
+}
+.content{
+    text-align: center;
+    padding: 1%;
+}
+.content h1{
+    font-family: 'Courier New', Courier, monospace;
 }
