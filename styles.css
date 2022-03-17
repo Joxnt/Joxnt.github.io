@@ -38,8 +38,8 @@ body{
 }   
 .navbar ul li{
     list-style: none;
-    display: inline;/*-block;
-    margin: 0 10px;*/
+    display: inline-block;
+    margin: 0 10px;
     position: relative;
 }
 .navbar ul li a{
