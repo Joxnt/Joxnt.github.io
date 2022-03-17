@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'jost';
+    text-decoration: none;
 }
 body{
     width: 100%;
@@ -26,7 +27,6 @@ body{
     font-size: 120px;
     font-family: 'caveat', cursive;
     cursor: pointer;
-    text-decoration: none;
 }
 .navbar{
     width: 85%;
@@ -38,8 +38,8 @@ body{
 }   
 .navbar ul li{
     list-style: none;
-    display: inline-block;
-    margin: 0 10px;
+    display: inline;/*-block;
+    margin: 0 10px;*/
     position: relative;
 }
 .navbar ul li a{
