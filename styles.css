@@ -72,5 +72,5 @@ body{
 }
 .content h1{
     font-family: 'Courier New', Courier, monospace;
-    down: 5vh
+    margin-top: 5vh
 }
