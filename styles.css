@@ -72,5 +72,8 @@ body{
 }
 .content h1{
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 5vh
+    margin-top: 5vh;
+}
+.codeProjects{
+    margin-top: 3vh;
 }
