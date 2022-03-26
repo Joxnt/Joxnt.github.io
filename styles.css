@@ -4,6 +4,7 @@
     --blinkSpeed: 500ms;
     --bgColor: #116466;
     --bannerColor: #2C3539;
+    --bannerTextColor: #ffcb9a;
 }
 *{
     padding: 0;
@@ -13,7 +14,7 @@
 body{
     width: 100%;
     height: auto;
-    overflow: hidden;
+    overflow: scroll;
     background-color: var(--bgColor);
 }
 .banner{
@@ -29,7 +30,7 @@ body{
     padding-left: 1%;
     display: table-cell;
     vertical-align: middle;
-    color: #d9b08c;
+    color: #ffcb9a;
     font-size: 250%;
     font-family: 'caveat', cursive;
     cursor: pointer;
@@ -114,6 +115,39 @@ h1::after{
 }
 .codeProjects{
     margin-top: 3vh;
+}
+.image-grid{
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+
+}
+.image-grid > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 500ms;
+}
+.image-grid-col-2{
+    grid-column: span 2;
+}
+.image-grid-row-2{
+    grid-row: span 2;
+}
+@media screen and (max-width: 1024px){
+    .image-grid{
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+}
+.image-grid > img:hover{
+    transform: scale(1.05);
 }
 @keyframes typewriter{
     to { 
