@@ -1,9 +1,6 @@
 window.onload = init;
 
   function init(){
-    // the code to be called when the dom has loaded
-    // #document has its nodes
-
     //getting text length
     const textArea = document.getElementById('typewriter');
     text = textArea.textContent;
