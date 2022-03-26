@@ -79,6 +79,7 @@ body{
 }
 .content h1{
     font-family: 'IBM Plex Mono', monospace;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     margin-top: 5vh;
     position: relative;
     display: inline-flex;
@@ -98,16 +99,22 @@ body{
     background: var(--bgColor);
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterLen)) 1s forwards;
 }
-
 h1::after{
     width: .125em;
     background: black;
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterLen)) 1s forwards,
         blink var(--blinkSpeed) steps(var(--typewriterLen)) infinite;
-
 }
-
+.subtitle{
+    font-size: clamp(1rem, 1.4vw, 3rem);
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 1.5s forwards;
+}
+.codeProjects{
+    margin-top: 3vh;
+}
 @keyframes typewriter{
     to { 
         left: 100%;
@@ -119,7 +126,9 @@ h1::after{
         background: transparent;
     }
 }
-
-.codeProjects{
-    margin-top: 3vh;
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
