@@ -117,7 +117,7 @@ h1::after{
     margin-top: 3vh;
 }
 .codeProjects ul li{
-    background: --bgColor;
+    background: var(--bgColor);
 .image-grid{
     --gap: 16px;
     --num-cols: 4;
