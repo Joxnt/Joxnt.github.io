@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     font-family: 'jost';
+    text-decoration: none;
 }
 body{
     width: 100%;
@@ -119,14 +120,20 @@ h1::after{
 /*code projects*/
 .codeProjects{
     margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 .codeProjects ul li{
-    background: var(--bgColor);
+    background: var(--bannerColor);
+    margin-top: 1vh;
+    list-style-type: none;
     border-radius: 25px;
-    /*
-    width: clamp(
-    CURRENT WORK - BACKGROUND BOXES FOR CODE PAGE LINKS
-    */
+    width: 400px;
+    height: 200px;
+}
+.codeProjects a:link{
+    text-decoration: none!important;
 }
 /*art grid display*/
 .image-grid{
