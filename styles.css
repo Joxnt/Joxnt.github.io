@@ -17,6 +17,7 @@ body{
     overflow: scroll;
     background-color: var(--bgColor);
 }
+/*banner*/
 .banner{
     width: 100%;
     height: 5vh;
@@ -74,10 +75,12 @@ body{
 .navbar ul li:hover::after{
     width: 100%;
 }
+/*page content*/
 .content{
     text-align: center;
     padding: 1%;
 }
+/*title*/
 .content h1{
     font-family: 'IBM Plex Mono', monospace;
     font-size: clamp(1.5rem, 4vw, 2.5rem);
@@ -113,12 +116,19 @@ h1::after{
     transform: translateY(3rem);
     animation: fadeInUp 2s ease 1.5s forwards;
 }
+/*code projects*/
 .codeProjects{
     margin-top: 3vh;
 }
 .codeProjects ul li{
     background: var(--bgColor);
+    border-radius: 25px;
+    /*
+    width: clamp(
+    CURRENT WORK - BACKGROUND BOXES FOR CODE PAGE LINKS
+    */
 }
+/*art grid display*/
 .image-grid{
     --gap: 16px;
     --num-cols: 4;
@@ -152,6 +162,7 @@ h1::after{
 .image-grid > img:hover{
     transform: scale(1.05);
 }
+/*animations*/
 @keyframes typewriter{
     to { 
         left: 100%;
