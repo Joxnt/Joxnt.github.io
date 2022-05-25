@@ -31,7 +31,6 @@ body{
     text-align: left;
     padding-left: 1%;
     display: table-cell;
-    vertical-align: middle;
     color: #ffcb9a;
     font-size: 250%;
     font-family: 'caveat', cursive;
@@ -133,6 +132,9 @@ h1::after{
 .codeProjects a{
     text-decoration: none;
     color: white;
+}
+.codeProjects p{
+    align-items: center;
 }
 /*art grid display*/
 .image-grid{
