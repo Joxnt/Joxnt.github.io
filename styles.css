@@ -126,7 +126,7 @@ h1::after{
     margin-top: 1vh;
     list-style-type: none;
     border-radius: 25px;
-    width: clamp(20rem, 20vw, 90rem);
+    width: clamp(90vw, 30vw, 20vw);
     height: 200px;
 }
 .codeProjects a{
